@@ -8,21 +8,15 @@
 /.bundle
 
 # Ignore the default SQLite database.
-# /db/*.sqlite3
-# /db/*.sqlite3-journal
-/db/*.sqlite3-*
+/db/*.sqlite3
+/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
+examples.txt
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
@@ -33,16 +27,10 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore dotenv files
-/.env*
-
-.rbenv-gemsets
-examples.txt
-whitelist.yml
-grades.yml
-cloud9_plugins.sh
-appdev/
-node_modules
-package-lock.json
-core.chrome*
-!vendor/
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+.theia/.ltici_apitoken.yml

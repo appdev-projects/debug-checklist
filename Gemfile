@@ -38,12 +38,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 gem 'rack-timeout', require: 'rack/timeout/base'
 gem 'sprockets', '< 4'
 gem 'sassc-rails'
 gem 'execjs'
 gem 'therubyracer', platforms: :ruby
+
 group :development, :test do
   gem 'amazing_print'
   gem 'dotenv-rails'
@@ -59,8 +59,9 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
-  gem 'letter_opener'
-  gem 'meta_request'
+  # gem 'letter_opener'
+  # gem 'meta_request'
+  gem "rails_db", "2.3.1"
 end
 
 group :test do
@@ -76,5 +77,4 @@ group :production do
   gem 'pg'
 end
 
-gem 'devise'
-gem 'activeadmin', '2.2.0'
+
