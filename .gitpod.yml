@@ -1,4 +1,4 @@
-image: patrickmckernin/debugchecklist2020
+image: jelaniwoods/appdev2020-debug-checklist:fall
 
 tasks:
   - init: bin/setup
